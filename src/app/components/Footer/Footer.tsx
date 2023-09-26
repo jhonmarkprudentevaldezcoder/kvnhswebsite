@@ -15,7 +15,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   const [scrolled, setScrolled] = useState(false);
-  const emailAddress = "wawaes.109480@deped.gov.ph";
+  const emailAddress = "kvnhs@deped.gov.ph";
   const sendhandleClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };
