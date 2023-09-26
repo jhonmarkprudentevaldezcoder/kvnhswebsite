@@ -65,7 +65,7 @@ export const Footer = () => {
 
               <div className=" mt-4 space-x-5 hidden md:flex">
                 <Link
-                  href="https://www.facebook.com/DepEdTayoWES109480?mibextid=ZbWKwL"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   className="text-gray-200  hover:text-amber-400"
                 >
@@ -178,7 +178,7 @@ export const Footer = () => {
         </span>
         <div className="flex mt-4 space-x-5    justify-center md:mt-0">
           <Link
-            href="https://www.facebook.com/DepEdTayoWES109480?mibextid=ZbWKwL"
+            href="https://www.facebook.com/"
             target="_blank"
             className="text-gray-400  hover:text-amber-600 text-sm"
           >
