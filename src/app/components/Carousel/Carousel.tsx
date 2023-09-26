@@ -34,7 +34,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
+              backgroundImage: "url('/images/bgmatatag.jpg')",
               height: "450px",
               backgroundPosition: "50%",
             }}
@@ -58,8 +58,8 @@ export default function Carousel() {
                       className="text-white"
                     >
                       Emply dummy text of the printing and typesetting industry
-                      orem Ipsum has been the industry's standard dummy text
-                      ever sinceprinting and typesetting industry.
+                      orem Ipsum has been the industrys standard dummy text ever
+                      sinceprinting and typesetting industry.
                     </motion.p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
+              backgroundImage: "url('/images/bgmatatag.jpg')",
               height: "450px",
               backgroundPosition: "50%",
             }}
@@ -89,7 +89,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
+              backgroundImage: "url('/images/bgmatatag.jpg')",
               height: "450px",
               backgroundPosition: "50%",
             }}
@@ -107,7 +107,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
+              backgroundImage: "url('/images/bgmatatag.jpg')",
               height: "450px",
               backgroundPosition: "50%",
             }}
