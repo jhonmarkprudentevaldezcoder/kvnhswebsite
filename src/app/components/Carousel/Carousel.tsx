@@ -21,6 +21,7 @@ SwiperCore.use([Autoplay]);
 export default function Carousel() {
   return (
     <div className="mt-24">
+      {/* eslint-disable react/no-unescaped-entities */}
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
