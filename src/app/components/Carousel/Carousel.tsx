@@ -34,7 +34,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/bgmatatag.jpg')",
+              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
               height: "450px",
               backgroundPosition: "50%",
             }}
@@ -71,7 +71,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/bgmatatag.jpg')",
+              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
               height: "450px",
               backgroundPosition: "50%",
             }}
@@ -89,7 +89,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/bgmatatag.jpg')",
+              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
               height: "450px",
               backgroundPosition: "50%",
             }}
@@ -107,7 +107,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/bgmatatag.jpg')",
+              backgroundImage: "url(&apos;/images/bgmatatag.jpg&apos;)",
               height: "450px",
               backgroundPosition: "50%",
             }}
