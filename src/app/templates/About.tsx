@@ -15,26 +15,23 @@ export default function About() {
         <div className="flex flex-col py-4 gap-1 md:w-1/2 lg:w-1/4">
           <div className="flex flex-col gap-5 md:py-5 lg:py-12   ">
             <span className="font-bold text-[#051c40] text-3xl uppercase px-5 md:px-0 ">
-              WHAT WE OFFER
+              VISION
             </span>
             <p className="text-sm px-5 md:px-0 ">
-              Tmply dummy text of the printing and typesetting indust Lorem
-              Ipsum has been theindustrys standard dummy text ever since simply
-              dummy text of the printing and etypesetting industry. Lorem Ipsum
-              has been the induststandard dummy text ever since en an unknown
-              printer took a galley of type scrambledmaining.
+              The KVNHS envisions to be the center of academic excellence that
+              prepares graduates to be globally competitive, responsive to
+              change and committed to live in harmony with the environment and
+              society.
             </p>
           </div>
           <div className="flex flex-col gap-5 md:py-5 lg:py-12 mt-12 md:mt-0">
             <span className="font-bold text-[#051c40] text-3xl uppercase px-5 md:px-0 ">
-              What We Do
+              MISSION
             </span>
             <p className="text-sm px-5 md:px-0 ">
-              Tmply dummy text of the printing and typesetting indust Lorem
-              Ipsum has been theindustrys standard dummy text ever since simply
-              dummy text of the printing and etypesetting industry. Lorem Ipsum
-              has been the induststandard dummy text ever since en an unknown
-              printer took a galley of type scrambledmaining.
+              The KVNHS shall equip learners with relevant knowledge, skills and
+              values that develop them into globally competent, morally upright
+              and responsible citizens.
             </p>
           </div>
         </div>
