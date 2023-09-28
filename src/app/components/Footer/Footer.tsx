@@ -1,13 +1,8 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { HiAcademicCap } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
-import {
-  AiFillPhone,
-  AiFillFacebook,
-  AiFillTwitterSquare,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillTwitterSquare } from "react-icons/ai";
 import { BiLogoGmail } from "react-icons/bi";
 import { ImLocation2 } from "react-icons/im";
 import { BsFillArrowUpCircleFill, BsArrowBarRight } from "react-icons/bs";
@@ -15,7 +10,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   const [scrolled, setScrolled] = useState(false);
-  const emailAddress = "kvnhs@deped.gov.ph";
+  const emailAddress = "kasiglahanvillagenhs.301446@deped.gov.ph";
   const sendhandleClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };
@@ -187,7 +182,11 @@ export const Footer = () => {
             <span className="sr-only">Facebook page</span>
           </Link>
 
-          <Link href="#" className="text-gray-400 text-sm hover:text-amber-600">
+          <Link
+            target="_blank"
+            href="https://maps.app.goo.gl/ksFjz7q4Xg75CoWa9"
+            className="text-gray-400 text-sm hover:text-amber-600"
+          >
             <ImLocation2 className="text-xl" />
             <span className="sr-only">Location</span>
           </Link>

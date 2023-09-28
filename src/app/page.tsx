@@ -4,6 +4,7 @@ import Carousel from "./components/Carousel/Carousel";
 import About from "./templates/About";
 import Hero from "./templates/Hero";
 import News from "./templates/News";
+import Updates from "./templates/Updates";
 import Welcome from "./templates/Welcome";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="bg-white ">
       <Carousel />
       <Welcome />
+      <Updates />
       <About />
     </div>
   );
