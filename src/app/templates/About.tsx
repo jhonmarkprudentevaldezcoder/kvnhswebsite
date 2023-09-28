@@ -6,7 +6,7 @@ export default function About() {
       <div
         className="h-96 bg-gray-200/50 bg-no-repeat"
         style={{
-          backgroundImage: "url('/images/news.jpg')",
+          backgroundImage: "url('/images/ban.jpg')",
           backgroundPosition: "center",
         }}
       ></div>

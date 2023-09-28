@@ -7,7 +7,7 @@ export default function Welcome() {
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-16 md:gap-9 ">
         <div className="flex flex-col items-center text-center gap-2">
           <span className="bg-gray-200 p-5 rounded-full hover:bg-yellow-300 cursor-pointer transition-all ease-in-out duration-75 delay-75">
-            <Image src={"/images/logo.png"} width={40} height={40} alt="logo" />
+            <Image src={"/images/logo.jpg"} width={40} height={40} alt="logo" />
           </span>
           <span className="text-[#051c40] font-semibold uppercase text-base">
             Scholarship Facility
@@ -19,7 +19,7 @@ export default function Welcome() {
         </div>
         <div className="flex flex-col items-center text-center  gap-2">
           <span className="bg-gray-200 p-5 rounded-full hover:bg-yellow-300 cursor-pointer transition-all ease-in-out duration-75 delay-75">
-            <Image src={"/images/logo.png"} width={40} height={40} alt="logo" />
+            <Image src={"/images/logo.jpg"} width={40} height={40} alt="logo" />
           </span>
           <span className="text-[#051c40] font-semibold uppercase text-bas">
             Skilled Lecturers
@@ -31,7 +31,7 @@ export default function Welcome() {
         </div>
         <div className="flex flex-col items-center text-center  gap-2">
           <span className="bg-gray-200 p-5 rounded-full hover:bg-yellow-300 cursor-pointer transition-all ease-in-out duration-75 delay-75">
-            <Image src={"/images/logo.png"} width={40} height={40} alt="logo" />
+            <Image src={"/images/logo.jpg"} width={40} height={40} alt="logo" />
           </span>
           <span className="text-[#051c40] font-semibold uppercase text-bas">
             Book Library & Store
@@ -43,7 +43,7 @@ export default function Welcome() {
         </div>
         <div className="flex flex-col items-center text-center  gap-2">
           <span className="bg-gray-200 p-5 rounded-full hover:bg-yellow-300 cursor-pointer transition-all ease-in-out duration-75 delay-75">
-            <Image src={"/images/logo.png"} width={40} height={40} alt="logo" />
+            <Image src={"/images/logo.jpg"} width={40} height={40} alt="logo" />
           </span>
           <span className="text-[#051c40] font-semibold uppercase text-bas">
             Book Library & Store

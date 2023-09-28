@@ -35,7 +35,7 @@ export default function Carousel() {
           <div
             className="w-full bg-center bg-cover  bg-no-repeat"
             style={{
-              backgroundImage: "url('/images/bgmatatag.jpg')",
+              backgroundImage: "url('/images/ban.jpg')",
               height: "450px",
               backgroundPosition: "50%",
             }}
