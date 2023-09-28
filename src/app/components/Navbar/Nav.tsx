@@ -35,10 +35,11 @@ export const Nav = () => {
           } bg-[#051c40] text-slate-300 flex flex-row justify-around `}
         >
           <div className="ml-8  flex flex-row items-center gap-3 text-sm ">
-            <MdEmail className="icons" /> <p>kvnhs@deped.gov.ph</p>
+            <MdEmail className="icons" />{" "}
+            <p>kasiglahanvillagenhs.301446@deped.gov.phh</p>
           </div>
           <div className="mr-8 mt-1 flex flex-row items-center gap-1 text-sm  ">
-            <AiFillPhone className="icons" /> +63123456723
+            <AiFillPhone className="icons" /> +63 956 081 9055
           </div>
         </div>
         <header
@@ -48,7 +49,7 @@ export const Nav = () => {
         >
           <Link href={"/"} className="flex flex-row items-center gap-3">
             <Image
-              src={"/images/final.jpg"}
+              src={"/images/logo.jpg"}
               width={45}
               height={45}
               alt="logo"

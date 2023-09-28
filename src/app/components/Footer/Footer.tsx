@@ -51,7 +51,7 @@ export const Footer = () => {
               <h2 className="mb-6 text-xl font-semibold md:font-semibold text-slate-200 uppercase flex flex-row items-center gap-3">
                 {/*    <HiAcademicCap className="icons text-4xl" /> */}
                 <Image
-                  src={"/images/logo.png"}
+                  src={"/images/logo.jpg"}
                   width={70}
                   height={70}
                   alt="logo"
@@ -65,7 +65,7 @@ export const Footer = () => {
 
               <div className=" mt-4 space-x-5 hidden md:flex">
                 <Link
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/DepEdTayoKVNHS301446"
                   target="_blank"
                   className="text-gray-200  hover:text-amber-400"
                 >
@@ -107,7 +107,8 @@ export const Footer = () => {
                 </li>
                 <li className="mb-1 w-100 md:bg-[#051c40] md:p-0 bg-[#1c2f4e] p-3 rounded-md">
                   <Link
-                    href="#"
+                    target="_blank"
+                    href="https://www.facebook.com/DepEdTayoKVNHS301446"
                     className="hover:underline  flex flex-row gap-3 items-center"
                   >
                     <BsArrowBarRight className="icons text-xl" /> Facebook
@@ -178,7 +179,7 @@ export const Footer = () => {
         </span>
         <div className="flex mt-4 space-x-5    justify-center md:mt-0">
           <Link
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/DepEdTayoKVNHS301446"
             target="_blank"
             className="text-gray-400  hover:text-amber-600 text-sm"
           >
