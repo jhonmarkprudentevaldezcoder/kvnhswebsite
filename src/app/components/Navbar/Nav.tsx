@@ -55,7 +55,7 @@ export const Nav = () => {
             !scrolledFromTop ? "h-8" : "h-8 top-0"
           } bg-[#051c40] text-slate-300 flex flex-row justify-around `}
         >
-          <div className="ml-8  flex flex-row items-center gap-3 text-sm ">
+          <div className="hidden md:flex ml-8   flex-row items-center gap-3 text-sm ">
             <MdEmail className="icons" />
             <p>kasiglahanvillagenhs.301446@deped.gov.phh</p>
           </div>
@@ -74,12 +74,12 @@ export const Nav = () => {
             </div>
           ) : (
             <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
-              <span className="flex flex-row items-center gap-2">
+              {/*  <span className="flex flex-row items-center gap-2">
                 <FaRegistered className="icons" />
                 <Link href={"/Register"} onClick={() => setAuthNav(true)}>
                   REGISTER
                 </Link>
-              </span>
+              </span> */}
               <span className="flex flex-row items-center gap-2">
                 <AiOutlineLogin className="icons" />{" "}
                 <Link href={"/Login"} onClick={() => setAuthNav(true)}>
