@@ -13,6 +13,7 @@ import Image from "next/image";
 export const Nav = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolledFromTop, setScrolledFromTop] = useState(false);
+  const [authNav, setAuthNav] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,10 +44,15 @@ export const Nav = () => {
           <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
             <span className="flex flex-row items-center gap-2">
               <FaRegistered className="icons" />
-              <Link href={"/"}>REGISTER</Link>
+              <Link href={"/Register"} onClick={() => setAuthNav(true)}>
+                REGISTER
+              </Link>
             </span>
             <span className="flex flex-row items-center gap-2">
-              <AiOutlineLogin className="icons" /> <Link href={"/"}>LOGIN</Link>
+              <AiOutlineLogin className="icons" />{" "}
+              <Link href={"/Login"} onClick={() => setAuthNav(true)}>
+                LOGIN
+              </Link>
             </span>
           </div>
         </div>
@@ -98,8 +104,11 @@ export const Nav = () => {
 
                 <Link
                   className="links "
-                  href="#header"
-                  onClick={() => setNavOpen(false)}
+                  href="/"
+                  onClick={() => {
+                    setNavOpen(false);
+                    setAuthNav(false);
+                  }}
                 >
                   HOME
                 </Link>
@@ -109,28 +118,25 @@ export const Nav = () => {
                 <BsFillHouseGearFill className="text-gray-800" />
                 <Link
                   className="links"
-                  href="#News"
-                  onClick={() => setNavOpen(false)}
+                  href={authNav ? "/" : "#About"}
+                  onClick={() => {
+                    setNavOpen(false);
+                    setAuthNav(false);
+                  }}
                 >
                   NEWS
                 </Link>
               </li>
-              {/*  <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md">
-                <BsFillHouseGearFill className="text-gray-800" />
-                <Link
-                  className="links"
-                  href="#Contact"
-                  onClick={() => setNavOpen(false)}
-                >
-                  CITIZENS CHARTER
-                </Link>
-              </li> */}
+
               <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <BsFillHouseGearFill className="text-gray-800" />
                 <Link
                   className="links"
-                  href="#About"
-                  onClick={() => setNavOpen(false)}
+                  href={authNav ? "/" : "#About"}
+                  onClick={() => {
+                    setNavOpen(false);
+                    setAuthNav(false);
+                  }}
                 >
                   ABOUT
                 </Link>
@@ -139,8 +145,11 @@ export const Nav = () => {
                 <BsFillHouseGearFill className="text-gray-800" />
                 <Link
                   className="links"
-                  href="#Contact"
-                  onClick={() => setNavOpen(false)}
+                  href={authNav ? "/" : "#Contact"}
+                  onClick={() => {
+                    setNavOpen(false);
+                    setAuthNav(false);
+                  }}
                 >
                   CONTACT
                 </Link>
@@ -148,9 +157,12 @@ export const Nav = () => {
               <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <ImFolderDownload className="text-amber-800" />
                 <Link
-                  className="links "
-                  href="#Contact"
-                  onClick={() => setNavOpen(false)}
+                  className="links"
+                  href={authNav ? "/" : "#Contact"}
+                  onClick={() => {
+                    setNavOpen(false);
+                    setAuthNav(false);
+                  }}
                 >
                   DOWNLOAD APP
                 </Link>
