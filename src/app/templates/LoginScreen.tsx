@@ -1,6 +1,49 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Cookies from "js-cookie";
 
 export default function LoginScreen() {
+  const [Username, setUsername] = useState<string>("");
+  const [Password, setPassword] = useState<string>("");
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const user = {
+      Username, // Change this to use the username
+      Password,
+    };
+
+    try {
+      const response = await fetch("https://kvnshapi.onrender.com/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user),
+      });
+
+      if (response.ok) {
+        const responseData = await response.json();
+
+        Cookies.set("token", responseData.token);
+        Cookies.set("userId", responseData.userId);
+        console.log(response);
+        setUsername("");
+        setPassword("");
+        window.location.href = "/";
+
+        // Redirect to the dashboard or perform any other actions
+      } else {
+        // Login failed
+        alert("Login failed. Please check your credentials.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred during login.");
+    }
+  };
+
   return (
     <div id="Login" className="mb-12 mt-12">
       <div
@@ -17,12 +60,23 @@ export default function LoginScreen() {
             <span className="font-bold text-[#051c40] text-3xl uppercase px-5 md:px-0 ">
               LOGIN
             </span>
-            <form className="text-sm px-5 md:px-0 flex flex-col gap-4 ">
-              <input type="text" placeholder="EMAIL" className="input-text" />
+            <form
+              onSubmit={handleLogin}
+              className="text-sm px-5 md:px-0 flex flex-col gap-4 "
+            >
+              <input
+                type="text"
+                placeholder="USERNAME"
+                className="input-text"
+                value={Username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
               <input
                 type="password"
                 placeholder="PASSWORD"
                 className="input-text"
+                value={Password}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <input
                 type="submit"

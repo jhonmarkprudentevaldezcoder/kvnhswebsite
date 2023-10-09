@@ -16,3 +16,12 @@
 .input-text {
   @apply border border-gray-600 p-2 rounded-md;
 }
+
+tr,
+td {
+  font-family: sans-serif;
+  border: 1px solid #222;
+  text-align: center;
+
+  @apply uppercase text-sm p-2;
+}

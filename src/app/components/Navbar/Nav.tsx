@@ -9,11 +9,29 @@ import { ImFolderDownload } from "react-icons/im";
 import { FaRegistered } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
 import Image from "next/image";
+import Cookies from "js-cookie";
 
 export const Nav = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   const [scrolledFromTop, setScrolledFromTop] = useState(false);
   const [authNav, setAuthNav] = useState(false);
+
+  const handleLogout = () => {
+    Cookies.remove("token");
+    Cookies.remove("userId");
+    window.location.href = "/Login";
+  };
+
+  useEffect(() => {
+    // Check if the "token" cookie exists
+    const token = Cookies.get("token");
+    if (token) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,20 +59,35 @@ export const Nav = () => {
             <MdEmail className="icons" />
             <p>kasiglahanvillagenhs.301446@deped.gov.phh</p>
           </div>
-          <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
-            <span className="flex flex-row items-center gap-2">
-              <FaRegistered className="icons" />
-              <Link href={"/Register"} onClick={() => setAuthNav(true)}>
-                REGISTER
-              </Link>
-            </span>
-            <span className="flex flex-row items-center gap-2">
-              <AiOutlineLogin className="icons" />{" "}
-              <Link href={"/Login"} onClick={() => setAuthNav(true)}>
-                LOGIN
-              </Link>
-            </span>
-          </div>
+          {isLoggedIn ? (
+            <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
+              <span className="flex flex-row items-center gap-2">
+                <FaRegistered className="icons" />
+                <p>WELCOME</p>
+              </span>
+              <span className="flex flex-row items-center gap-2">
+                <AiOutlineLogin className="icons" />
+                <Link onClick={handleLogout} href={"/"}>
+                  LOGOUT
+                </Link>
+              </span>
+            </div>
+          ) : (
+            <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
+              <span className="flex flex-row items-center gap-2">
+                <FaRegistered className="icons" />
+                <Link href={"/Register"} onClick={() => setAuthNav(true)}>
+                  REGISTER
+                </Link>
+              </span>
+              <span className="flex flex-row items-center gap-2">
+                <AiOutlineLogin className="icons" />{" "}
+                <Link href={"/Login"} onClick={() => setAuthNav(true)}>
+                  LOGIN
+                </Link>
+              </span>
+            </div>
+          )}
         </div>
         <header
           className={`fixed w-full z-50 bg-gray-50 flex md:gap-9 justify-between items-center px-4 md:px-12 transition-all duration-200 ${
