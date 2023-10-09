@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Updates() {
@@ -17,9 +18,11 @@ export default function Updates() {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
-                    src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/347868448_998125101598580_1470542410123490152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHXlUlgagDfokEDqP7K1AtLaU3vk56vAHppTe-Tnq8AeoYMOf8jrSxzi0q-tNZDb6gmQ9Uta9m0o5yQlrXfFWKf&_nc_ohc=JkIFCAhEwccAX9egsPN&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD29pqw1AVcyUCfuTbsctiBzVD9MzPGayqy02AjTvnEow&oe=651B53F4"
-                    className="w-full"
+                  <Image
+                    src={"/images/logo.jpg"}
+                    width={100}
+                    height={40}
+                    alt="image"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
@@ -42,9 +45,11 @@ export default function Updates() {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
-                    src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/347868448_998125101598580_1470542410123490152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHXlUlgagDfokEDqP7K1AtLaU3vk56vAHppTe-Tnq8AeoYMOf8jrSxzi0q-tNZDb6gmQ9Uta9m0o5yQlrXfFWKf&_nc_ohc=JkIFCAhEwccAX9egsPN&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD29pqw1AVcyUCfuTbsctiBzVD9MzPGayqy02AjTvnEow&oe=651B53F4"
-                    className="w-full"
+                  <Image
+                    src={"/images/logo.jpg"}
+                    width={100}
+                    height={40}
+                    alt="image"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
@@ -68,9 +73,11 @@ export default function Updates() {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
-                    src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/347868448_998125101598580_1470542410123490152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHXlUlgagDfokEDqP7K1AtLaU3vk56vAHppTe-Tnq8AeoYMOf8jrSxzi0q-tNZDb6gmQ9Uta9m0o5yQlrXfFWKf&_nc_ohc=JkIFCAhEwccAX9egsPN&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD29pqw1AVcyUCfuTbsctiBzVD9MzPGayqy02AjTvnEow&oe=651B53F4"
-                    className="w-full"
+                  <Image
+                    src={"/images/logo.jpg"}
+                    width={100}
+                    height={40}
+                    alt="image"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
@@ -95,9 +102,11 @@ export default function Updates() {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
-                    src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/347868448_998125101598580_1470542410123490152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHXlUlgagDfokEDqP7K1AtLaU3vk56vAHppTe-Tnq8AeoYMOf8jrSxzi0q-tNZDb6gmQ9Uta9m0o5yQlrXfFWKf&_nc_ohc=JkIFCAhEwccAX9egsPN&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD29pqw1AVcyUCfuTbsctiBzVD9MzPGayqy02AjTvnEow&oe=651B53F4"
-                    className="w-full"
+                  <Image
+                    src={"/images/logo.jpg"}
+                    width={100}
+                    height={40}
+                    alt="image"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
@@ -121,9 +130,11 @@ export default function Updates() {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
-                    src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/347868448_998125101598580_1470542410123490152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHXlUlgagDfokEDqP7K1AtLaU3vk56vAHppTe-Tnq8AeoYMOf8jrSxzi0q-tNZDb6gmQ9Uta9m0o5yQlrXfFWKf&_nc_ohc=JkIFCAhEwccAX9egsPN&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD29pqw1AVcyUCfuTbsctiBzVD9MzPGayqy02AjTvnEow&oe=651B53F4"
-                    className="w-full"
+                  <Image
+                    src={"/images/logo.jpg"}
+                    width={100}
+                    height={40}
+                    alt="image"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
@@ -146,9 +157,11 @@ export default function Updates() {
                   data-te-ripple-init
                   data-te-ripple-color="light"
                 >
-                  <img
-                    src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/347868448_998125101598580_1470542410123490152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeHXlUlgagDfokEDqP7K1AtLaU3vk56vAHppTe-Tnq8AeoYMOf8jrSxzi0q-tNZDb6gmQ9Uta9m0o5yQlrXfFWKf&_nc_ohc=JkIFCAhEwccAX9egsPN&_nc_ht=scontent.fmnl4-1.fna&oh=00_AfD29pqw1AVcyUCfuTbsctiBzVD9MzPGayqy02AjTvnEow&oe=651B53F4"
-                    className="w-full"
+                  <Image
+                    src={"/images/logo.jpg"}
+                    width={100}
+                    height={40}
+                    alt="image"
                   />
                   <a href="#!">
                     <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>

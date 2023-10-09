@@ -6,6 +6,8 @@ import { AiFillPhone } from "react-icons/ai";
 import { ImHome } from "react-icons/im";
 import { BsFillHouseGearFill } from "react-icons/bs";
 import { ImFolderDownload } from "react-icons/im";
+import { FaRegistered } from "react-icons/fa";
+import { AiOutlineLogin } from "react-icons/ai";
 import Image from "next/image";
 
 export const Nav = () => {
@@ -35,11 +37,17 @@ export const Nav = () => {
           } bg-[#051c40] text-slate-300 flex flex-row justify-around `}
         >
           <div className="ml-8  flex flex-row items-center gap-3 text-sm ">
-            <MdEmail className="icons" />{" "}
+            <MdEmail className="icons" />
             <p>kasiglahanvillagenhs.301446@deped.gov.phh</p>
           </div>
-          <div className="mr-8 mt-1 flex flex-row items-center gap-1 text-sm  ">
-            <AiFillPhone className="icons" /> +63 956 081 9055
+          <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
+            <span className="flex flex-row items-center gap-2">
+              <FaRegistered className="icons" />
+              <Link href={"/"}>REGISTER</Link>
+            </span>
+            <span className="flex flex-row items-center gap-2">
+              <AiOutlineLogin className="icons" /> <Link href={"/"}>LOGIN</Link>
+            </span>
           </div>
         </div>
         <header
@@ -85,7 +93,7 @@ export const Nav = () => {
                 !navOpen ? "translate-x-full" : "translate-x-0 flex flex-col"
               } md:relative md:flex  md:space-x-4 lg:space-x-6 md:min-h-0 md:px-0 md:py-0 md:space-y-0 md:translate-x-0`}
             >
-              <li className="w-100 md:bg-gray-50 bg-gray-50 ml-10 flex flex-row items-center gap-2 text-sm rounded-md">
+              <li className="md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <ImHome className="text-gray-800" />
 
                 <Link
@@ -96,7 +104,8 @@ export const Nav = () => {
                   HOME
                 </Link>
               </li>
-              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md">
+
+              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <BsFillHouseGearFill className="text-gray-800" />
                 <Link
                   className="links"
@@ -116,7 +125,7 @@ export const Nav = () => {
                   CITIZENS CHARTER
                 </Link>
               </li> */}
-              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md">
+              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <BsFillHouseGearFill className="text-gray-800" />
                 <Link
                   className="links"
@@ -126,7 +135,7 @@ export const Nav = () => {
                   ABOUT
                 </Link>
               </li>
-              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md">
+              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <BsFillHouseGearFill className="text-gray-800" />
                 <Link
                   className="links"
@@ -136,7 +145,7 @@ export const Nav = () => {
                   CONTACT
                 </Link>
               </li>
-              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md">
+              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
                 <ImFolderDownload className="text-amber-800" />
                 <Link
                   className="links "
