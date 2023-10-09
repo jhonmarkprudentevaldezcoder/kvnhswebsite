@@ -70,9 +70,6 @@ export default function StudentGrades() {
             <thead>
               <tr className="border-gray-200">
                 <th>ID</th>
-                <th>Surname</th>
-                <th>FirstName</th>
-                <th>GradeLevel</th>
                 <th>Strand</th>
                 <th>Section</th>
                 <th>Subject</th>
@@ -88,9 +85,6 @@ export default function StudentGrades() {
               {grades.map((grade) => (
                 <tr key={grade._id}>
                   <td>{grade.ID}</td>
-                  <td>{grade.Surname}</td>
-                  <td>{grade.FirstName}</td>
-                  <td>{grade.GradeLevel}</td>
                   <td>{grade.Strand}</td>
                   <td>{grade.Section}</td>
                   <td>{grade.Subject}</td>

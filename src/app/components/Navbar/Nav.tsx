@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdEmail } from "react-icons/md";
-import { AiFillPhone } from "react-icons/ai";
+import { GiUpgrade } from "react-icons/gi";
 import { ImHome } from "react-icons/im";
 import { BsFillHouseGearFill } from "react-icons/bs";
 import { ImFolderDownload } from "react-icons/im";
@@ -187,19 +187,39 @@ export const Nav = () => {
                   CONTACT
                 </Link>
               </li>
-              <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
-                <ImFolderDownload className="text-amber-800" />
-                <Link
-                  className="links"
-                  href={authNav ? "/" : "#Contact"}
-                  onClick={() => {
-                    setNavOpen(false);
-                    setAuthNav(false);
-                  }}
-                >
-                  DOWNLOAD APP
-                </Link>
-              </li>
+
+              {!isLoggedIn ? (
+                <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4"></li>
+              ) : (
+                <div className="flex flex-row">
+                  <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
+                    <GiUpgrade className="text-amber-800" />
+                    <Link
+                      className="links"
+                      href="/Grade"
+                      onClick={() => {
+                        setNavOpen(false);
+                        setAuthNav(false);
+                      }}
+                    >
+                      VIEW GRADES
+                    </Link>
+                  </li>
+                  <li className=" md:bg-gray-50 w-100 bg-gray-50  flex flex-row items-center gap-2 text-sm rounded-md px-4">
+                    <ImFolderDownload className="text-amber-800" />
+                    <Link
+                      className="links"
+                      href={authNav ? "/" : "#Contact"}
+                      onClick={() => {
+                        setNavOpen(false);
+                        setAuthNav(false);
+                      }}
+                    >
+                      DOWNLOAD APP
+                    </Link>
+                  </li>
+                </div>
+              )}
             </ul>
           </nav>
         </header>
