@@ -74,12 +74,12 @@ export const Nav = () => {
             </div>
           ) : (
             <div className="mr-8 mt-1 flex flex-row items-center gap-3 md:gap-6 text-sm  ">
-              {/*  <span className="flex flex-row items-center gap-2">
+              <span className="flex flex-row items-center gap-2">
                 <FaRegistered className="icons" />
                 <Link href={"/Register"} onClick={() => setAuthNav(true)}>
                   REGISTER
                 </Link>
-              </span> */}
+              </span>
               <span className="flex flex-row items-center gap-2">
                 <AiOutlineLogin className="icons" />{" "}
                 <Link href={"/Login"} onClick={() => setAuthNav(true)}>
