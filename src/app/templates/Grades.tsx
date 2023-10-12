@@ -36,7 +36,7 @@ export default function StudentGrades() {
         if (response.ok) {
           const data = await response.json();
           /*        setGrades(data); */
-          setFilteredGrades(data);
+          /*      setFilteredGrades(data); */
         } else {
           console.error("Error fetching student grades.");
         }
