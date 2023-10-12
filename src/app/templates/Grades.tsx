@@ -5,6 +5,8 @@ import Cookies from "js-cookie";
 export default function StudentGrades() {
   const [grades, setGrades] = useState<StudentGrade[]>([]);
   const [loading, setLoading] = useState(true);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [filteredGrades, setFilteredGrades] = useState<StudentGrade[]>(grades);
 
   type StudentGrade = {
     _id: string;
@@ -33,9 +35,8 @@ export default function StudentGrades() {
 
         if (response.ok) {
           const data = await response.json();
-          setGrades(data);
-          console.log(data);
-          console.log(userId);
+          /*        setGrades(data); */
+          setFilteredGrades(data);
         } else {
           console.error("Error fetching student grades.");
         }
@@ -48,6 +49,30 @@ export default function StudentGrades() {
 
     fetchStudentGrades();
   }, []);
+
+  const handleSearch = async (query: string) => {
+    setSearchQuery(query);
+
+    if (query === "") {
+      setFilteredGrades(grades);
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `https://kvnshapi.onrender.com/student-grades/${query}`
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        setFilteredGrades(data);
+      } else {
+        console.error("Error searching for student grades.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
 
   if (loading) {
     return <p>Loading...</p>;
@@ -66,6 +91,12 @@ export default function StudentGrades() {
       <div className="p-5">
         <div className="">
           <h2>Student Grades</h2>
+          <input
+            type="text"
+            placeholder="Search by ID"
+            value={searchQuery}
+            onChange={(e) => handleSearch(e.target.value)}
+          />
           <table className="w-full p-4 shadow-lg  overflow-hidden">
             <thead>
               <tr className="border-gray-200">
@@ -82,7 +113,7 @@ export default function StudentGrades() {
               </tr>
             </thead>
             <tbody>
-              {grades.map((grade) => (
+              {filteredGrades.map((grade) => (
                 <tr key={grade._id}>
                   <td>{grade.ID}</td>
                   <td>{grade.Strand}</td>
