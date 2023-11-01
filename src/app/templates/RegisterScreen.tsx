@@ -104,20 +104,21 @@ export default function RegisterScreen() {
               onSubmit={handleRegistration}
               className="text-sm px-5 md:px-0 flex flex-col gap-4 "
             >
+              {/* 
               <input
                 type="text"
                 placeholder="ID"
                 className="input-text"
                 value={ID}
                 onChange={(e) => setId(e.target.value)}
-              />
-              <input
+              /> */}
+              {/*  <input
                 type="text"
                 placeholder="RFID"
                 className="input-text"
                 value={RFID}
                 onChange={(e) => setRfid(e.target.value)}
-              />
+              /> */}
               <input
                 type="text"
                 placeholder="Username"
@@ -150,7 +151,7 @@ export default function RegisterScreen() {
               />
               <input
                 type="text"
-                placeholder="FIRST NAME"
+                placeholder="First name"
                 className="input-text"
                 value={FirstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -158,7 +159,7 @@ export default function RegisterScreen() {
               />
               <input
                 type="text"
-                placeholder="MIDDLE NAME"
+                placeholder="Middle name"
                 className="input-text"
                 value={MiddleName}
                 onChange={(e) => setMiddleName(e.target.value)}
@@ -166,7 +167,7 @@ export default function RegisterScreen() {
               />
               <input
                 type="text"
-                placeholder="LAST NAME"
+                placeholder="Last name"
                 className="input-text"
                 value={Surname}
                 onChange={(e) => setSurname(e.target.value)}
@@ -190,20 +191,20 @@ export default function RegisterScreen() {
               />
               <input
                 type="text"
-                placeholder="GRADE LEVEL"
+                placeholder="Grade level"
                 className="input-text"
                 value={GradeLevel}
                 onChange={(e) => setGradeLevel(e.target.value)}
                 required
               />
-              <input
+              {/*   <input
                 type="text"
                 placeholder="Section"
                 className="input-text"
                 value={Section}
                 onChange={(e) => setSection(e.target.value)}
                 required
-              />
+              /> */}
               <input
                 type="text"
                 placeholder="Strand"
@@ -212,13 +213,13 @@ export default function RegisterScreen() {
                 onChange={(e) => setStrand(e.target.value)}
                 required
               />
-              <input
+              {/*     <input
                 type="text"
                 placeholder="CONTACT NUMBER"
                 className="input-text"
                 value={ContactNumber}
                 onChange={(e) => setContactNumber(e.target.value)}
-              />
+              /> */}
               <input
                 type="submit"
                 value="REGISTER"
