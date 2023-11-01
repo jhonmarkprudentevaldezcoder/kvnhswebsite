@@ -43,7 +43,7 @@ export default function Carousel() {
             <div className="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 py-12">
               <div className="text-center">
                 <div className="container px-4 mx-auto">
-                  <div className="max-w-4xl mx-auto h-80 ">
+                  {/* <div className="max-w-4xl mx-auto h-80 ">
                     <motion.h1
                       initial={{ x: -1000 }}
                       animate={{ x: 0 }}
@@ -62,7 +62,7 @@ export default function Carousel() {
                       orem Ipsum has been the industrys standard dummy text ever
                       sinceprinting and typesetting industry.
                     </motion.p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
