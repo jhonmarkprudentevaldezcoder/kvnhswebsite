@@ -117,22 +117,6 @@ export const Footer = () => {
                     <BsArrowBarRight className="icons text-xl" /> Contact Us
                   </Link>
                 </li>
-                <li className="mb-1  w-100 md:bg-[#051c40] md:p-0 bg-[#1c2f4e] p-3 rounded-md">
-                  <Link
-                    href="#"
-                    className="hover:underline  flex flex-row gap-3 items-center"
-                  >
-                    <BsArrowBarRight className="icons text-xl" /> Register
-                  </Link>
-                </li>
-                <li className="mb-1  w-100 md:bg-[#051c40] md:p-0 bg-[#1c2f4e] p-3 rounded-md">
-                  <Link
-                    href="#"
-                    className="hover:underline  flex flex-row gap-3 items-center"
-                  >
-                    <BsArrowBarRight className="icons text-xl" /> Login
-                  </Link>
-                </li>
               </ul>
             </div>
             <div>
