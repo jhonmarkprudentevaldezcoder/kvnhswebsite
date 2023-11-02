@@ -96,7 +96,7 @@ export const Nav = () => {
         >
           <Link href={"/"} className="flex flex-row items-center gap-3">
             <Image
-              src={"/images/logo.jpg"}
+              src={"/images/finallogo.ico"}
               width={45}
               height={45}
               alt="logo"
@@ -107,7 +107,7 @@ export const Nav = () => {
                 !scrolledFromTop ? "scale-60" : "scale-90"
               }`}
             >
-              K.V.N.H.S
+              K.V.S.H.S
             </p>
           </Link>
           <nav>

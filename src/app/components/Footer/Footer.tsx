@@ -46,7 +46,7 @@ export const Footer = () => {
               <h2 className="mb-6 text-xl font-semibold md:font-semibold text-slate-200 uppercase flex flex-row items-center gap-3">
                 {/*    <HiAcademicCap className="icons text-4xl" /> */}
                 <Image
-                  src={"/images/logo.jpg"}
+                  src={"/images/finallogo.ico"}
                   width={70}
                   height={70}
                   alt="logo"
